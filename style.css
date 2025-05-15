@@ -1,0 +1,524 @@
+/*---Everyone---*/
+a:link {
+  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 20%;
+}
+
+head, body{
+  margin: 0;
+}
+
+h1,h2,h3,h4,p {
+  font-family: sans-serif;
+}
+
+hr{
+  display: block;
+  padding: 0%;
+  height: 1rem;
+  background-color: black;
+  border-color: black;
+  margin: 0;
+}
+
+/*---All color---*/
+#HOME{
+  background: linear-gradient(to bottom right, #474747,#333333)
+}
+#POCH{
+  background: linear-gradient(to bottom right, #FEF7EB, #FDDFB0);
+}
+#MCL{
+  background: linear-gradient(to bottom right, #FFDA99, #FFBC47);
+}
+#FERR{
+  background: linear-gradient(to bottom right, #FF7070, #FF0000);
+}
+
+/*---Header part---*/
+  header{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+  }
+
+  header h1{
+    font-size: 30px;
+    color: black;
+  }
+
+  header img{
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5%;
+  }
+
+/*---button---*/
+h4{
+  text-align: center;
+  border: solid;
+  padding: 3%;
+}
+
+/*---Footer part--*/
+
+  .inin{
+    background: linear-gradient(to bottom right, #7A7A00, #660000,#8F5D00);
+  }
+
+  footer{
+    display: flex;
+    align-items: center;    
+    justify-content: space-evenly;
+    
+  }
+
+  footer p{
+    font-size: 16px;
+    padding: 5%;
+  }
+
+  .info,.infoo,.info-page h3{
+    font-size: 15px;
+  }
+
+  .info img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .infoo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .infoo h3{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .infoo img{
+    padding: 3%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .infoo a{
+    margin: 0;
+  }
+
+  .info-page h3{
+    color: #04287c;
+  }
+
+  .info-page img{
+    width: 100px;
+    height: 100px;
+    margin-left: 15%;
+  }
+
+/*---Index---*/
+
+.insperation {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  background: linear-gradient(to bottom right, yellow, red,orange);
+}
+
+.insperation h2 {
+  text-align: center;
+  padding: 10%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 7%;
+}
+
+.icon img {
+  height: 150px;
+  width: 150px;
+}
+
+.car_link{
+  margin-bottom: 3%;
+}
+
+.car_link a{
+  display: flex;
+  align-items: center;
+}
+
+.car_link h2{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 5rem;
+  color: white;
+  text-shadow: black 2px 5px;
+  transition: 0.3s;
+}
+
+.car_link h2:hover{
+  color: gold;
+}
+
+.car_link img{
+  width: 500px;
+  height: 350px;
+}
+
+/*---All cars page---*/
+
+.part_one{
+  display: flex;
+  height: 30rem;
+  color: white;
+}
+
+.part_one img{
+  height: 400px;
+  width: 1000px;
+  margin: 3%;
+  border-radius: 4%;
+}
+
+.part_one h2{
+  text-align: center;
+  font-size: 45px;
+}
+
+.part_one p{
+  text-align: justify;
+  padding: 5%;
+}
+
+.tex{
+  display: flex;
+  flex-direction:column;
+  padding-right: 10%;
+}
+
+.part_two{
+  display: flex;
+  color: white;
+}
+
+.part_two p{
+  text-align: center;
+}
+
+.PSpeed h2, .MSpeed h2, .FSpeed h2{
+  padding: 10px;
+  text-align: center;
+}
+.Phistory ,.Mhistory{
+  padding: 10px;
+}
+
+.Phistory h2,.Mhistory h2,.Fhistory h2{
+  text-align: center;
+}
+
+.FSpeed, .MSpeed{
+  width: 65%;
+}
+
+li {
+  margin-bottom: 4%;
+  text-align: center;
+  list-style: none;
+  padding: 15px;
+}
+
+.Fans, .Pans, .Mans{
+  color: white;
+  padding: 20px;
+}
+
+.Fans h3, .Pans h3, .Mans h3 {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Edits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-rows: 200px;
+}
+
+.Edits img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+/* Första bilden större */
+.Edits img:first-child {
+  grid-row: span 2;
+}
+
+/* Mobile Optimized Styles - max 350px */
+
+@media screen and (max-width: 460px) {
+
+  /*---Phone reseter--ALL---*/
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
+
+  header {
+    align-items: center;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  header img {
+    width: 35px;
+    height: 35px;
+  }
+
+  h4 {
+    text-align: center;
+    padding: 5px  ;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .info h3{
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .info-page h3 {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 15px;
+  }
+
+  .info-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .info-page a{
+    color: #364b48;
+  }
+
+  .info-page img{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 24%;
+  }
+
+  .infoo img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .insperation {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .insperation h2 {
+    font-size: 18px;
+  }
+
+  .insperation img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-left: 2%;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .icon img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .car_link a {
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .car_link h2 {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    transition: 0.3s;
+  }
+
+  .car_link h2:hover {
+    color: gold;
+  }
+
+  .car_link img {
+    width: 8.5rem;
+    height: 10rem;
+  }
+
+  /* All Cars Page */
+  .part_one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .part_one img{
+    width: 7rem;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    margin-top: -15%;
+  }
+
+  .part_two {
+    flex-direction: column;
+    margin-bottom: 22rem;
+  }
+
+  .part_one h2,.part_two h2 {
+    font-size: 22px;
+  }
+
+  .part_one p, .part_two p{
+    text-align: center;
+    line-height: 1.2rem;
+  }
+
+  .tex {
+    margin-left: 8%;
+    gap: 5px;
+  }
+
+  .PSpeed,.MSpeed,.FSpeed,.Phistory,.Mhistory,.Fhistory {
+    padding: 20px;
+  }
+
+  .MSpeed,.FSpeed, .PSpeed{
+    width: 100%;
+  }
+
+  .Phistory h2,.Mhistory h2,.Fhistory h2 {
+    font-size: 20px;
+    padding-bottom: 2%;
+  }
+
+  .Fans,.Pans, .Mans{
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+
+  .Fans img, .Pans img, .Mans img{
+    max-width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .Fans h3, .Pans h3, .Mans h3{
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .Fans h3{
+    margin-top: 55%;
+  }
+
+  .Mans h3{
+    margin-top: 65%;
+  }
+
+  .Edits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .Edits img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+/*---All cars colors---*/
+.Middle, .Carss{
+  background-color: #292929;
+}
+.PSpeed{
+background-color: #C9B08C;
+}
+.Phistory{
+  background-color: #B79666;
+}
+.MSpeed{
+  background-color: #FFB433;
+}
+.Mhistory{
+  background-color: #F59B00;
+}
+.FSpeed{
+  background-color: #A30000;
+}
+.Fhistory{
+  background-color: #660000;
+}
